@@ -154,7 +154,6 @@ def fill_form(response):
         time.sleep(sleepp)
 
         # Find the radio group for question 5 using its aria-labelledby attribute
-        # Make sure to replace the values in the selector below with the correct ones for question 5
         question_5_group = driver.find_element(
             By.CSS_SELECTOR, '[aria-labelledby="QuestionId_r9f04d901963f476390b0053a9fad5536 QuestionInfo_r9f04d901963f476390b0053a9fad5536"]')
 
@@ -178,7 +177,7 @@ def fill_form(response):
         question_6_group = driver.find_element(
             By.CSS_SELECTOR, '[aria-labelledby="QuestionId_rac998bf9695f4e4fb1ac170c12e7869d QuestionInfo_rac998bf9695f4e4fb1ac170c12e7869d"]')
 
-        # Click the appropriate radio button
+        # click the appropriate radio button
         question_6_group.find_element(
             By.CSS_SELECTOR, environment_options[environment_rating]).click()
 
